@@ -8,8 +8,10 @@
 *.kicad_pcb-bak
 *.sch-bak
 *~
+\#auto_saved_files#
 _autosave-*
 *.tmp
+*-backups/
 *-save.pro
 *-save.kicad_pcb
 fp-info-cache
