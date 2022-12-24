@@ -2792,11 +2792,11 @@
     (effects (font (size 0.635 0.635)) (justify left bottom))
     (uuid dc828a47-26d1-49c6-9675-ec83e0f13763)
   )
-  (text "Sizing: 1W @ 10A" (at 142.24 67.31 0)
+  (text "Sizing: 2.5W @ 5A" (at 142.24 67.31 0)
     (effects (font (size 0.635 0.635)) (justify left bottom))
     (uuid eb4f6249-bf1a-4b63-bceb-8d3a6a697ceb)
   )
-  (text "Sizing: limit max voltage to ~100mV\n(100mV across shunt is 10A)"
+  (text "Sizing: limit max voltage to ~0.5V\n(0.5V across shunt is 5A)"
     (at 45.72 38.1 0)
     (effects (font (size 0.635 0.635)) (justify left bottom))
     (uuid f940a544-8891-4e31-a919-1bfed59ac53d)
@@ -2830,7 +2830,7 @@
     (property "Reference" "R_SHUNT1" (id 0) (at 142.24 62.2299 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "10m" (id 1) (at 142.24 64.7699 0)
+    (property "Value" "" (id 1) (at 142.24 64.7699 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Custom_Footprints:R_Shunt_Vishay_SR3_P15.24mm_Horizontal" (id 2) (at 140.716 63.754 90)
@@ -2868,7 +2868,7 @@
     (property "Reference" "R1" (id 0) (at 68.58 31.7499 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "1M" (id 1) (at 68.58 34.2899 0)
+    (property "Value" "" (id 1) (at 68.58 34.2899 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" (id 2) (at 65.024 32.766 90)
@@ -3125,7 +3125,7 @@
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 530dde22-7d70-49d3-a479-365e2dae52d3)
     (property "Reference" "F1" (id 0) (at 45.72 106.68 90))
-    (property "Value" "10A" (id 1) (at 45.72 109.22 90))
+    (property "Value" "" (id 1) (at 45.72 109.22 90))
     (property "Footprint" "Custom_Footprints:696106003002" (id 2) (at 45.72 114.808 90)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -3964,7 +3964,7 @@
       (reference "D_PWR1") (unit 1) (value "D_Bridge_-AA+") (footprint "Diode_THT:Diode_Bridge_32.0x5.6x17.0mm_P10.0mm_P7.5mm")
     )
     (path "/530dde22-7d70-49d3-a479-365e2dae52d3"
-      (reference "F1") (unit 1) (value "10A") (footprint "Custom_Footprints:696106003002")
+      (reference "F1") (unit 1) (value "5A") (footprint "Custom_Footprints:696106003002")
     )
     (path "/d7efb92b-0454-4c11-8fc3-d497114d7580"
       (reference "J1") (unit 1) (value "AC_SOCKET") (footprint "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-3-5.0-H_1x03_P5.00mm_Horizontal")
@@ -3982,7 +3982,7 @@
       (reference "Q_PWR2") (unit 1) (value "IRF540N") (footprint "Package_TO_SOT_THT:TO-220-3_Vertical")
     )
     (path "/0c4596cd-9836-4192-98e2-4c477de779ec"
-      (reference "R1") (unit 1) (value "1M") (footprint "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal")
+      (reference "R1") (unit 1) (value "220k") (footprint "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal")
     )
     (path "/1f7441b8-6ca6-4ffb-85c2-b4c7c6e9a2eb"
       (reference "R2") (unit 1) (value "1k") (footprint "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal")
@@ -4003,7 +4003,7 @@
       (reference "R_PWR1") (unit 1) (value "47k") (footprint "Custom_Footprints:R_Box_L13.0mm_W9.0mm_P5.08mm")
     )
     (path "/060d0346-c655-4190-b31e-b332c3cb217c"
-      (reference "R_SHUNT1") (unit 1) (value "10m") (footprint "Custom_Footprints:R_Shunt_Vishay_SR3_P15.24mm_Horizontal")
+      (reference "R_SHUNT1") (unit 1) (value "0.1") (footprint "Custom_Footprints:R_Shunt_Vishay_SR3_P15.24mm_Horizontal")
     )
     (path "/be3c6b81-2cc5-4ab2-8b4d-9d413dda554e"
       (reference "SW1") (unit 1) (value "SW_SPST") (footprint "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal")
