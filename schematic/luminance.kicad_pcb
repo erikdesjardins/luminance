@@ -87,6 +87,8 @@
     )
   )
 
+  (property "VERSION" "v0.1")
+
   (net 0 "")
   (net 1 "+12V")
   (net 2 "GNDPWR")
@@ -3457,6 +3459,9 @@
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (gr_text "2" (at 93.98 123.19) (layer "F.SilkS") (tstamp 1bf6c4ba-9ca3-4159-b0ec-b3f91ea4ca79)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (gr_text "High Voltage Current-Controlled Supply (${VERSION})\ngithub.com/erikdesjardins/luminance" (at 154.94 55.245) (layer "F.SilkS") (tstamp 20100305-be76-4993-a400-d46c0b95b032)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (gr_text "PG" (at 91.44 144.78 90) (layer "F.SilkS") (tstamp 2dd6e79c-3ccb-435e-9f3b-c162990f1ddb)
