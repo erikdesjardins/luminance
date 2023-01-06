@@ -710,11 +710,11 @@
         )
       )
     )
-    (symbol "Device:D_Bridge_-AA+" (pin_names (offset 0)) (in_bom yes) (on_board yes)
+    (symbol "Device:D_Bridge_+AA-" (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "D" (id 0) (at 2.54 6.985 0)
         (effects (font (size 1.27 1.27)) (justify left))
       )
-      (property "Value" "D_Bridge_-AA+" (id 1) (at 2.54 5.08 0)
+      (property "Value" "D_Bridge_+AA-" (id 1) (at 2.54 5.08 0)
         (effects (font (size 1.27 1.27)) (justify left))
       )
       (property "Footprint" "" (id 2) (at 0 0 0)
@@ -726,13 +726,13 @@
       (property "ki_keywords" "rectifier ACDC" (id 4) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "Diode bridge, -ve/AC/AC/+ve" (id 5) (at 0 0 0)
+      (property "ki_description" "Diode bridge, +ve/AC/AC/-ve" (id 5) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_fp_filters" "D*Bridge* D*Rectifier*" (id 6) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "D_Bridge_-AA+_0_1"
+      (symbol "D_Bridge_+AA-_0_1"
         (circle (center -5.08 0) (radius 0.254)
           (stroke (width 0) (type default) (color 0 0 0 0))
           (fill (type outline))
@@ -833,9 +833,9 @@
           (fill (type outline))
         )
       )
-      (symbol "D_Bridge_-AA+_1_1"
-        (pin passive line (at -7.62 0 0) (length 2.54)
-          (name "-" (effects (font (size 1.27 1.27))))
+      (symbol "D_Bridge_+AA-_1_1"
+        (pin passive line (at 7.62 0 180) (length 2.54)
+          (name "+" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
         )
         (pin passive line (at 0 7.62 270) (length 2.54)
@@ -846,8 +846,8 @@
           (name "~" (effects (font (size 1.27 1.27))))
           (number "3" (effects (font (size 1.27 1.27))))
         )
-        (pin passive line (at 7.62 0 180) (length 2.54)
-          (name "+" (effects (font (size 1.27 1.27))))
+        (pin passive line (at -7.62 0 0) (length 2.54)
+          (name "-" (effects (font (size 1.27 1.27))))
           (number "4" (effects (font (size 1.27 1.27))))
         )
       )
@@ -1996,6 +1996,7 @@
     )
   )
 
+
   (junction (at 160.02 140.97) (diameter 0) (color 0 0 0 0)
     (uuid 00b5db23-84fc-428b-a4da-eac35e0f923f)
   )
@@ -2950,7 +2951,7 @@
   (symbol (lib_id "Diode:1N4148") (at 102.87 144.78 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 1a2e9544-40c0-478a-a1e6-aaa92c362749)
-    (property "Reference" "D10" (id 0) (at 105.41 143.5099 90)
+    (property "Reference" "D11" (id 0) (at 105.41 143.5099 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1N4148" (id 1) (at 105.41 146.0499 90)
@@ -3249,6 +3250,23 @@
     (pin "2" (uuid 088c7430-3876-42d1-9140-0fd52155260d))
   )
 
+  (symbol (lib_id "Device:D_Bridge_+AA-") (at 95.25 120.65 0) (mirror x) (unit 1)
+    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (uuid 70ffc0bd-36ef-49fa-b2b2-9e34be9861f4)
+    (property "Reference" "D9" (id 0) (at 81.28 114.0712 0))
+    (property "Value" "D_Bridge_+AA-" (id 1) (at 81.28 116.6112 0))
+    (property "Footprint" "Custom_Footprints:DIOB_TS50P07G" (id 2) (at 95.25 120.65 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (id 3) (at 95.25 120.65 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid eccf4627-ce4d-47eb-ba6a-2ad514df6094))
+    (pin "2" (uuid 4da46e4d-d8d8-402c-9909-98ce01a0c14d))
+    (pin "3" (uuid 36ebee35-eb3a-4193-8f08-4f798f5616a2))
+    (pin "4" (uuid 3cf8e614-0d2e-4e7d-8edb-7d72f85a1203))
+  )
+
   (symbol (lib_id "Device:R_US") (at 123.19 148.59 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 73c44951-cca2-4cf4-8b2f-bed7d3b147ff)
@@ -3435,7 +3453,7 @@
   (symbol (lib_id "Diode:1N4148") (at 102.87 137.16 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid b32fa643-c679-44dc-b38c-6b766d08601b)
-    (property "Reference" "D9" (id 0) (at 105.41 138.4301 90)
+    (property "Reference" "D10" (id 0) (at 105.41 138.4301 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1N4148" (id 1) (at 105.41 135.8901 90)
@@ -3537,7 +3555,7 @@
   (symbol (lib_id "Diode:1N4148") (at 102.87 167.64 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid cbaac10b-4ba4-4401-8ca0-de591d554b1a)
-    (property "Reference" "D11" (id 0) (at 105.41 166.3699 90)
+    (property "Reference" "D12" (id 0) (at 105.41 166.3699 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1N4148" (id 1) (at 105.41 168.9099 90)
@@ -3551,23 +3569,6 @@
     )
     (pin "1" (uuid 868912b0-f8d9-4aad-90dc-8a4849207863))
     (pin "2" (uuid 8a505398-540e-46de-a991-856521182072))
-  )
-
-  (symbol (lib_id "Device:D_Bridge_-AA+") (at 95.25 120.65 0) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid cd2669ea-7e4a-494e-b016-d9707c2f75d0)
-    (property "Reference" "D_PWR1" (id 0) (at 106.68 116.84 0))
-    (property "Value" "D_Bridge_-AA+" (id 1) (at 110.49 119.38 0))
-    (property "Footprint" "Diode_THT:Diode_Bridge_32.0x5.6x17.0mm_P10.0mm_P7.5mm" (id 2) (at 95.25 120.65 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 95.25 120.65 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 4c5c690b-cd58-4f95-9ed6-f7f67d2e4c35))
-    (pin "2" (uuid 760557a3-fd4f-4f2f-85f6-14b92485e4df))
-    (pin "3" (uuid 73945be1-422f-4ee0-b6d3-9e17621c3c04))
-    (pin "4" (uuid 8046768c-2955-40da-9d64-8db07e7531b5))
   )
 
   (symbol (lib_id "power:GNDPWR") (at 34.29 69.85 0) (unit 1)
@@ -3605,7 +3606,7 @@
   (symbol (lib_id "Diode:1N4148") (at 102.87 175.26 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid d02797b5-8146-483f-b6a7-3e013602f2d5)
-    (property "Reference" "D12" (id 0) (at 105.41 176.5301 90)
+    (property "Reference" "D13" (id 0) (at 105.41 176.5301 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1N4148" (id 1) (at 105.41 173.9901 90)
@@ -4000,20 +4001,20 @@
     (path "/08f2cba7-1a3f-4818-b7bd-be20c5c2ea0d"
       (reference "D8") (unit 1) (value "1N5817") (footprint "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal")
     )
-    (path "/b32fa643-c679-44dc-b38c-6b766d08601b"
-      (reference "D9") (unit 1) (value "1N4148") (footprint "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal")
+    (path "/70ffc0bd-36ef-49fa-b2b2-9e34be9861f4"
+      (reference "D9") (unit 1) (value "D_Bridge_+AA-") (footprint "Custom_Footprints:DIOB_TS50P07G")
     )
-    (path "/1a2e9544-40c0-478a-a1e6-aaa92c362749"
+    (path "/b32fa643-c679-44dc-b38c-6b766d08601b"
       (reference "D10") (unit 1) (value "1N4148") (footprint "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal")
     )
-    (path "/cbaac10b-4ba4-4401-8ca0-de591d554b1a"
+    (path "/1a2e9544-40c0-478a-a1e6-aaa92c362749"
       (reference "D11") (unit 1) (value "1N4148") (footprint "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal")
     )
-    (path "/d02797b5-8146-483f-b6a7-3e013602f2d5"
+    (path "/cbaac10b-4ba4-4401-8ca0-de591d554b1a"
       (reference "D12") (unit 1) (value "1N4148") (footprint "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal")
     )
-    (path "/cd2669ea-7e4a-494e-b016-d9707c2f75d0"
-      (reference "D_PWR1") (unit 1) (value "D_Bridge_-AA+") (footprint "Diode_THT:Diode_Bridge_32.0x5.6x17.0mm_P10.0mm_P7.5mm")
+    (path "/d02797b5-8146-483f-b6a7-3e013602f2d5"
+      (reference "D13") (unit 1) (value "1N4148") (footprint "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal")
     )
     (path "/530dde22-7d70-49d3-a479-365e2dae52d3"
       (reference "F1") (unit 1) (value "5A") (footprint "Custom_Footprints:696106003002")
