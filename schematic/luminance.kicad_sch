@@ -2695,8 +2695,8 @@
     (effects (font (size 0.635 0.635)) (justify left bottom))
     (uuid 017ee159-8940-4d2a-975d-54f32b425a78)
   )
-  (text "Component Notes:\n- LM741 can be replaced with similar opamp\n- IRF540N is actually IRF200B211; can be replaced with similar N-channel MOSFET\n- transformer is 10:1, 120V primary to 12V secondary\n- bipolar caps are film\n- polarized caps are aluminum polymer"
-    (at 177.8 179.07 0)
+  (text "Component Notes:\n- LM741 can be replaced with similar opamp\n- IRF540N is actually IRF200B211; can be replaced with similar N-channel MOSFET\n- transformer is 10:1, 120V primary to 12V secondary\n- bipolar caps are film\n- polarized caps are aluminum polymer\n- board is at least 2oz copper"
+    (at 177.8 180.34 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 0673bd15-bb27-42a3-b8dd-ff34de638161)
   )
