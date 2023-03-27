@@ -378,9 +378,10 @@
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
-        "name": "MOSFET (smaller / low clearance)",
+        "name": "MOSFET (low clearance)",
         "nets": [
-          "VDD",
+          "+VDC",
+          "GNDS",
           "V_SINK"
         ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
@@ -401,17 +402,18 @@
         "microvia_drill": 0.1,
         "name": "Power",
         "nets": [
-          "+VDC",
           "AC",
           "AC_FUSED",
+          "AC_ICL",
           "AC_SW",
           "Earth_Protective",
           "GNDPWR",
-          "NEUT"
+          "NEUT",
+          "VCC"
         ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 4.0,
+        "track_width": 2.0,
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6.0

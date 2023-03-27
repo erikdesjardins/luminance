@@ -1,3 +1,3 @@
 # luminance
 
-AKA "light destroyer". High voltage linear current supply.
+AKA "light destroyer". High voltage switching current supply.
