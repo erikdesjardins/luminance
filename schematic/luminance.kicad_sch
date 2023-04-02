@@ -3368,7 +3368,7 @@
     (effects (font (size 0.635 0.635)) (justify left bottom))
     (uuid 017ee159-8940-4d2a-975d-54f32b425a78)
   )
-  (text "Component Notes:\n- LM741 can be replaced with similar opamp\n- transformer is 10:1, 120V primary to 12V secondary\n- bipolar caps are film\n- polarized caps are aluminum polymer\n- board is at least 2oz copper"
+  (text "Component Notes:\n- LM741 can be replaced with similar opamp\n- transformer is 10:1, 120V primary to 12V secondary\n- bipolar caps are film\n- small/low voltage polarized caps are aluminum polymer\n- board is at least 2oz copper"
     (at 177.8 179.07 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 0673bd15-bb27-42a3-b8dd-ff34de638161)
@@ -3531,12 +3531,12 @@
     (pin "2" (uuid 35e604d7-2844-44f5-90e3-fc44f57c18d7))
   )
 
-  (symbol (lib_id "Device:C") (at 186.69 45.72 90) (unit 1)
+  (symbol (lib_id "Device:C") (at 186.69 45.72 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 0ff2bb60-0924-4acb-8bb9-047a53b0ca6d)
     (property "Reference" "C8" (id 0) (at 186.69 38.1 90))
     (property "Value" "1n" (id 1) (at 186.69 40.64 90))
-    (property "Footprint" "Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" (id 2) (at 190.5 44.7548 0)
+    (property "Footprint" "Capacitor_THT:C_Rect_L7.2mm_W2.5mm_P5.00mm_FKS2_FKP2_MKS2_MKP2" (id 2) (at 182.88 44.7548 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 186.69 45.72 0)
