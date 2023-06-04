@@ -87,7 +87,7 @@
     )
   )
 
-  (property "VERSION" "v0.3")
+  (property "VERSION" "v1.0")
 
   (net 0 "")
   (net 1 "+12V")
