@@ -3654,7 +3654,7 @@
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 1f7441b8-6ca6-4ffb-85c2-b4c7c6e9a2eb)
     (property "Reference" "R2" (id 0) (at 72.39 36.83 90))
-    (property "Value" "1k" (id 1) (at 72.39 39.37 90))
+    (property "Value" "10k" (id 1) (at 72.39 39.37 90))
     (property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" (id 2) (at 72.136 42.164 90)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -3704,7 +3704,7 @@
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 2ea7c6af-2688-4d13-8a65-fcd6c32ce9bc)
     (property "Reference" "R3" (id 0) (at 72.39 46.99 90))
-    (property "Value" "1k" (id 1) (at 72.39 49.53 90))
+    (property "Value" "10k" (id 1) (at 72.39 49.53 90))
     (property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" (id 2) (at 72.136 54.356 90)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -5023,10 +5023,10 @@
       (reference "R1") (unit 1) (value "220k") (footprint "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal")
     )
     (path "/1f7441b8-6ca6-4ffb-85c2-b4c7c6e9a2eb"
-      (reference "R2") (unit 1) (value "1k") (footprint "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal")
+      (reference "R2") (unit 1) (value "10k") (footprint "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal")
     )
     (path "/2ea7c6af-2688-4d13-8a65-fcd6c32ce9bc"
-      (reference "R3") (unit 1) (value "1k") (footprint "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal")
+      (reference "R3") (unit 1) (value "10k") (footprint "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal")
     )
     (path "/97004469-870b-4129-884c-ea508913fed9"
       (reference "R4") (unit 1) (value "220k") (footprint "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal")
